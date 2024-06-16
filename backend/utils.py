@@ -82,7 +82,7 @@ def compile_search_query(query: str) -> re.Pattern:
     print(pattern)
     return re.compile(pattern, re.IGNORECASE)
 
-def search_texts(query: str, texts: list[Text], preview_len: int = 60, max_results_per_text: int = 40) -> list[SearchResult]:
+def search_texts(query: str, texts: list[Text], preview_len: int = 60, max_results_per_text: int = 50) -> list[SearchResult]:
     results = []
     if not query:
         return results
